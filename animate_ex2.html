@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+     button{
+       width:100px;
+       height:30px;
+       border:1px solid red;
+     }
+     img{
+       border:2px solid red;
+     }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#btn1").click(function(){
+          $("#pepe").animate({marginLeft:"+=300px"},"slow");
+          $("#pepe").animate({marginLeft:"-=300px"},"slow");
+        });
+        $("#btn2").click(function(){
+          $("img").animate({hiehgt:"toggle"},"slow");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <a href="index.html"><h3>메인으로</h3></a>
+    <img src="pepe1.png" id="pepe" width="400" height="265"><br>
+    <b>페페</b> 더 프로그<br>
+    <button id="btn1">좌우 이동</button>
+    <button id="btn2">이미지 토글</button>
+  </body>
+</html>
