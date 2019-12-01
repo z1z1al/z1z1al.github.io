@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+     #gallery{
+       width:950px;
+       height:190px;
+       background:#ff0;
+       border:2px solid black;
+       border-radius:15px;
+     }
+     ul{
+       list-style:none;
+     }
+     ul li{
+       display:inline;
+       float:left;
+       padding:10px;
+     }
+     .bigpic{
+       position:absolute;
+       display:none;
+       left:100px;
+       width:400px;
+       height:340px;
+     }
+     .smallpic{
+       border:2px dotted red;
+       width:200px;
+       height:140px;
+     }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#s1").click(function(){
+          $("#big1").fadeIn(1000);
+        });
+        $("#big1").click(function(){
+          $("#big1").fadeOut(1000);
+        });
+        $("#s2").click(function(){
+          $("#big2").fadeIn(1000);
+        });
+        $("#big2").click(function(){
+          $("#big2").fadeOut(1000);
+        });
+        $("#s3").click(function(){
+          $("#big3").fadeIn(1000);
+        });
+        $("#big3").click(function(){
+          $("#big3").fadeOut(1000);
+        });
+        $("#s4").click(function(){
+          $("#big4").fadeIn(1000);
+        });
+        $("#big4").click(function(){
+          $("#big4").fadeOut(1000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <a href="index.html"><h3>메인으로</h3></a>
+    <h1>사용법</h1>
+    <ol>
+      <li>작은 이미지를 클릭하면 큰 이미지가 나타납니다.</li>
+      <li>큰 이미지를 클릭하면 큰 이미지가 사라집니다.</li>
+    </ol>
+    <div id="gallery">
+      <ul>
+        <li>
+          <img src="pepe1.png" id="s1" class="smallpic">
+          <img src="pepe1.png" id="big1" class="bigpic">
+        </li>
+        <li>
+          <img src="pepe2.png" id="s2" class="smallpic">
+          <img src="pepe2.png" id="big2" class="bigpic">
+        </li>
+        <li>
+          <img src="pepe3.png" id="s3" class="smallpic">
+          <img src="pepe3.png" id="big3" class="bigpic">
+        </li>
+        <li>
+          <img src="pepe4.png" id="s4" class="smallpic">
+          <img src="pepe4.png" id="big4" class="bigpic">
+        </li>
+      </ul>
+    </div>
+
+    </div>
+  </body>
+</html>
