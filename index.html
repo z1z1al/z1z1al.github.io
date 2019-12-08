@@ -2,32 +2,44 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>20190794 YB 이창현</title>
-    <style>
-
-      h4{
-        margin-left:400px;
-      }
-      ul{
-        list-style-type:decimal;
-        padding:25px;
-      }
-      li{
-        margin:10px 0px;
-        font-size:23px;
-      }
-    </style>
+    <title>치킨플러스</title>
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <h1>웹프로그래밍 실습예제</h1>
-    <h4>20190794 YB 이창현</h4>
-    <ul>
-      <a href="fade.html"><li>fadeIn / fadeOut 예제</li></a>
-      <a href="slide.html"><li>slideUp / slideDown 예제</li></a>
-      <a href="slide_table.html"><li>slideUp / slideDown 테이블 예제</li></a>
-      <a href="animate_ex1.html"><li>animate 확대하기 예제</li></a>
-      <a href="animate_ex2.html"><li>animate 이동 예제</li></a>
-      <a href="animate_ex3.html"><li>animate 이동 예제2</li></a>
-    </ul>
+    <header>
+      <h1><img src="logo.png"></h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="chi.html" target="if1">치킨</a></li>
+        <li><a href="piz.html" target="if1">피자</a></li>
+        <li><a href="tb.html" target="if1">떡볶이</a></li>
+        <li><a href="#">plan2</a></li>
+      </ul>
+    </nav>
+    <aside id="left">
+      <h4>카테고리</h4>
+      <ul>
+        <li><a href="fade.html" target="if1">fade</a></li>
+        <li><a href="slide.html" target="if1">slide</a></li>
+        <li><a href="slide_table.html" target="if1">slide_table</a></li>
+        <li><a href="animate_ex1.html" target="if1">animate_1</a></li>
+        <li><a href="animate_ex2.html" target="if1">animate_2</a></li>
+        <li><a href="animate_ex3.html" target="if1">animate_3</a></li>
+    </aside>
+    <section id="main">
+      <article>
+        <iframe name="if1" src="fade.html" width="900" height="500">
+        </iframe>
+      </article>
+    </setion>
+    <footer>
+      <ul>
+        <li>주소 : (13112)경기도 성남시 수정구 복정로 135, 3층 (복정로, 미보빌딩) │ 사업자등록번호 : 385-81-00540</li>
+        <li>Tel : 02-302-4780 │ E-Mail : support@holdinghands.co.kr</li>
+        <li>Copyright(c)2019 chickenplus Rights Reserved.</li>
+      </ul>
+    </footer>
   </body>
 </html>

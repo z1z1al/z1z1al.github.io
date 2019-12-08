@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #contents{
+        position: relative;
+        display:inline-block;
+        width:935px;
+      }
+      #contents .menubox{
+        display:inline-block;
+        background-color: #e7e7e7;
+        margin:5px;
+        float:left;
+        width:457px;
+        height:100%;
+      }
+      #contents .menu_img img{
+        width:100%;
+      }
+      #contents .menu_txt{
+        position: relative;
+        font-size: 26px;
+        padding:8px 0 8px 20px;
+        font-weight:bold;
+      }
+      #contents .like{
+        position:absolute;
+        right:0;
+        bottom:0;
+        background: #f9d921;
+        width:70px;
+        height:40px;
+        font-size:20px;
+        font-weight:bold;
+        cursor:pointer;
+      }
+      #button{
+        margin:30px 10px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+     $(document).ready(function(){
+       $(".menu_img").hide();
+       $("#toggle").click(function(){
+         $(".menu_img").fadeToggle();
+       })
+     })
+    </script>
+  </head>
+  <body>
+    <h1>피자 메뉴</h1>
+    <br>
+    <div id="button">
+      <input type="button" id="toggle" value="이미지 보기/숨기기">
+    </div>
+    <div id="contents">
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_pizza/zola.PNG"></div>
+        <div class="menu_txt">고르곤졸라피자</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_pizza/rony.PNG"></div>
+        <div class="menu_txt">페페로니피자</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_pizza/ritta.PNG"></div>
+        <div class="menu_txt">마르게리따피자</div>
+      </div>
+    </div>
+  </body>
+</html>

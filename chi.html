@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #contents{
+        position: relative;
+        display:inline-block;
+        width:935px;
+      }
+      #contents .menubox{
+        display:inline-block;
+        background-color: #e7e7e7;
+        margin:5px;
+        float:left;
+        width:457px;
+        height:100%;
+      }
+      #contents .menu_img img{
+        width:100%;
+      }
+      #contents .menu_txt{
+        position: relative;
+        font-size: 26px;
+        padding:8px 0 8px 20px;
+        font-weight:bold;
+      }
+      #contents .like{
+        position:absolute;
+        right:0;
+        bottom:0;
+        background: #f9d921;
+        width:70px;
+        height:40px;
+        font-size:20px;
+        font-weight:bold;
+        cursor:pointer;
+      }
+      #button{
+        margin:30px 10px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+     $(document).ready(function(){
+       $(".menu_img").hide();
+       $("#toggle").click(function(){
+         $(".menu_img").toggle();
+       })
+     })
+    </script>
+  </head>
+  <body>
+    <h1>치킨 메뉴</h1>
+    <br>
+    <div id="button">
+      <input type="button" id="toggle" value="이미지 보기/숨기기">
+    </div>
+    <div id="contents">
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/creamy_tok.PNG"></div>
+        <div class="menu_txt">크리미어니언톡톡치킨</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/seasoned_tok.PNG"></div>
+        <div class="menu_txt">양념톡톡치킨</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/hot_tok.PNG"></div>
+        <div class="menu_txt">핫쵸킹톡톡치킨</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/guobaorou_tok.PNG"></div>
+        <div class="menu_txt">꿔바로우톡톡치킨</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/snow.PNG"></div>
+        <div class="menu_txt">눈맞은치킨</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/hot.PNG"></div>
+        <div class="menu_txt">핫쵸킹치킨</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/crispy.PNG"></div>
+        <div class="menu_txt">크리스피후라이드</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/stamina.PNG"></div>
+        <div class="menu_txt">마늘스태미나치킨</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/dambaek.PNG"></div>
+        <div class="menu_txt">바삭담백한후라이드</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/soy.PNG"></div>
+        <div class="menu_txt">간장치킨</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/tomato.PNG"></div>
+        <div class="menu_txt">토마토커리순살치킨</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/veryspicy.PNG"></div>
+        <div class="menu_txt">개매운치킨</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/onion.PNG"></div>
+        <div class="menu_txt">순살양파닭</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/creamy.PNG"></div>
+        <div class="menu_txt">크리미어니언순살치킨</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/gangjeong.PNG"></div>
+        <div class="menu_txt">강정치킨</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/seasoned.PNG"></div>
+        <div class="menu_txt">양념치킨</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/yangko.PNG"></div>
+        <div class="menu_txt">쉑쉑양꼬치킨</div>
+      </div>
+
+      <div class="menubox">
+        <div class="menu_img"><img src="img/menu_chicken/guobaorou.PNG"></div>
+        <div class="menu_txt">꿔바로우치킨</div>
+      </div>
+    </div>
+  </body>
+</html>
